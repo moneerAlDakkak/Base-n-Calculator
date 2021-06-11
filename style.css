@@ -11,6 +11,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -20,6 +24,28 @@ body {
   font-family: poppins;
   text-align: center;
   background: radial-gradient(circle, #ffbbcc 0%, #afc5df 100%);
+}
+
+body button {
+  border: 2px solid #4fabd6;
+  background-color: #4fabd6;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  outline: none;
+  border-radius: 4px;
+}
+
+body button.page {
+  margin: 20px;
+}
+
+main {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 main .theinput {
@@ -38,15 +64,7 @@ main .theinput input {
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.4);
   color: #181818;
-}
-
-main .theinput button {
-  border: 2px solid #4fabd6;
-  background-color: #4fabd6;
-  color: white;
-  cursor: pointer;
-  padding: 8px 12px;
-  font-weight: bold;
+  padding-left: 40px;
 }
 
 main .theinput span {
@@ -75,5 +93,22 @@ main select {
 
 main #result {
   width: 100%;
+  padding: 10px;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: white;
+}
+
+#to {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: #b9c2f3;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

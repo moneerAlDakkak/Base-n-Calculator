@@ -18,28 +18,29 @@
   </head>
 
   <body>
+    <h1>Base-n Calculator</h1>
     <main>
-      <h1>Base-n Calculator</h1>
+      <section>
+        <h5>Convert from Decimal</h5>
 
-      <h5>Convert from Decimal</h5>
+        <div class="theinput">
+          <span id="sign">+</span>
+          <input
+            type="number"
+            placeholder="decimal number here"
+            id="unconverted"
+          />
+          <button id="convert">&gt;</button>
+        </div>
 
-      <div class="theinput">
-        <span id="sign" style="display: none">+</span>
-        <input
-          type="number"
-          placeholder="decimal number here"
-          id="unconverted"
-        />
-        <button id="convert">&gt;</button>
-      </div>
+        <select>
+          <option value="2">To Binary (base-2)</option>
+          <option value="8">To Octal (base-8)</option>
+          <option value="16">To Hexadecimal (base-16)</option>
+        </select>
 
-      <select>
-        <option value="2">To Binary (base-2)</option>
-        <option value="8">To Octal (base-8)</option>
-        <option value="16">To Hexadecimal (base-16)</option>
-      </select>
-
-      <div id="result"></div>
+        <div id="result" style="white-space: pre-wrap"></div>
+      </section>
     </main>
 
     <script src="main.js"></script>
